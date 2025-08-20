@@ -1,0 +1,3 @@
+after creating any user run in sql workbench
+UPDATE users SET role='ADMIN' WHERE email='admin@lib.com';
+(Optional test endpoint to trigger now, if you want: add to BorrowController a GET /notify-run calling notificationService.sendOverdueNotifications().)
